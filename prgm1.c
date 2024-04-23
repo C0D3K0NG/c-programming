@@ -3,8 +3,7 @@
 int main()
 {
   int a;
-  for(a=65;a<91;a++)
+  for(a=65;a<91;a++);
   printf("%c\n",a);
-
-  return 0;
+    return 0;
 }
