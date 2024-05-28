@@ -29,27 +29,17 @@ int main(){
   //first matrix
   int a[m][m];
   fillup(a);
-  //second matrix
-  int b[m][m];
-  fillup(b);
-
   print(a);
-  printf("\n");
-  print(b);
 
-  
-  //multiplying matrix
-  int c[m][m];
+  //transpose matrix
+  int tr[m][m];
   for(int i=0;i<m;i++){
     for(int j=0;j<m;j++){
-      c[i][j]=0;
-      for(int k=0;k<m;k++){
-        c[i][j]+=a[i][k]*b[k][j];
-      }
+        tr[i][j]=a[j][i];
     }
   }
-  printf("\nThe multiplied matrix is: \n");
-  print(c);
-  
+
+  printf("\n The transpose of the matrix is : \n");
+  print(tr);
   return 0;
 }
